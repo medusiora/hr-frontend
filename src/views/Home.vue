@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { useRecipesStore } from "@/stores";
+import { useBookStore } from "@/stores/book";
 
-const recipesStore = useRecipesStore();
+const book = useBookStore();
 </script>
 
 <template>
@@ -9,7 +9,7 @@ const recipesStore = useRecipesStore();
     <h1>Home!!</h1>
     <pre>
       <code>
-        {{ recipesStore.recipes }}
+        {{ book.collection }}
       </code>
     </pre>
   </div>
