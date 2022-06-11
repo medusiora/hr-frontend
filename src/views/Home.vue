@@ -9,7 +9,7 @@ const recipesStore = useRecipesStore();
     <h1>Home!!</h1>
     <pre>
       <code>
-        {{ recipesStore }}
+        {{ recipesStore.recipes }}
       </code>
     </pre>
   </div>
