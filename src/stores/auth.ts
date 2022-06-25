@@ -5,16 +5,16 @@ import type { User, Credential } from "@/interfaces/auth";
 
 /**
  * Simulate a login
- * @param {string} u
- * @param {string} p
+ * @param {string} username
+ * @param {string} password
  */
 function apiLogin({
-  username: u,
-  password: p,
+  username,
+  password,
 }: Credential): Promise<{ token: string }> {
-  console.log(`Login with username: ${u} and password: ${p}`);
+  console.log(`Login with username: ${username} and password: ${password}`);
 
-  if (u === "admin" && p === "admin") {
+  if (username === "admin" && password === "admin") {
     return Promise.resolve({
       token: `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwic3ViIjoiMTIzNDU2Nzg5MCIsIm5hbWUiOiJKb2huIERvZSIsImlhdCI6MTUxNjIzOTAyMn0.Bq50di-dDiyIOgTkE2-Svue_Kp7BLbW5hodd57QSY3s`,
     });
