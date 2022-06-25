@@ -27,41 +27,37 @@
         <circle cx="113" cy="113" fill="none" r="109" stroke="#6E6E96" stroke-width="8" />
       </svg>
 
-      <div class="tracking-widest mt-6">
+      <div class="tracking-widest my-10">
         <h1 class="text-gray-500 text-6xl block">
           4 0 4
         </h1>
-        <span class="text-gray-500 text-xl">
+        <span class="text-gray-500">
           Sorry, We couldn't find what you are looking for!
         </span>
       </div>
 
-      <div class="mt-6">
-        <a href="#" class="text-gray-500 font-mono text-xl bg-gray-200 p-3 rounded-md hover:shadow-md">
-          Go back
-        </a>
-      </div>
+      <a href="#" class="inline-block text-gray-500 font-mono text-xl bg-gray-200 p-3 rounded-md hover:shadow-md">
+        Go back
+      </a>
     </div>
   </section>
 </template>
 
-<style>
+<style lang="postcss">
 .emoji-404 {
-  position: relative;
+  @apply relative;
   animation: move 2.5s infinite;
 }
 
 @keyframes move {
-  33% {
-    top: 0px;
+
+  33%,
+  100% {
+    @apply top-0;
   }
 
   66% {
-    top: 20px;
-  }
-
-  100% {
-    top: 0px
+    @apply top-5;
   }
 }
 </style>

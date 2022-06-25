@@ -5,5 +5,7 @@ import Layout from '@/layouts/default.vue';
 </script>
 
 <template>
-  <Layout />
+  <Layout>
+    <RouterView />
+  </Layout>
 </template>
