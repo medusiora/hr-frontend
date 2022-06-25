@@ -19,3 +19,7 @@ if (localStorage.theme === "dark" || (!("theme" in localStorage) && window.match
     <RouterView />
   </Layout>
 </template>
+
+<style>
+@import url('https://rsms.me/inter/inter.css');
+</style>
